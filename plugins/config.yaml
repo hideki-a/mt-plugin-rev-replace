@@ -1,0 +1,14 @@
+id: RevReplace
+name: RevReplace
+version: 1.0.0
+description: rev-manifest.jsonに基づいてCSS・JSのパスを書きかえます。
+author_name: Hideki Abe
+author_link: https://www.anothersky.pw/
+
+blog_config_template: path_setting.tmpl
+settings:
+    path_setting:
+        default:
+
+callbacks:
+    build_page: $RevReplace::RevReplace::Plugin::hdlr_sub
